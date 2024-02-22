@@ -140,10 +140,10 @@ namespace Elpis
 
         public void InitReleaseData()
         {
-//#if APP_RELEASE
+#if APP_RELEASE
             _bassRegEmail = ReleaseData.BassRegEmail;
             _bassRegKey = ReleaseData.BassRegKey;
-//#endif
+#endif
         }
 
         #endregion
@@ -1075,7 +1075,7 @@ namespace Elpis
                                                {
                                                    _updatePage = new UpdatePage(_update);
                                                    _updatePage.UpdateSelectionEvent += _updatePage_UpdateSelectionEvent;
-                                                   transitionControl.AddPage(_updatePage);
+                                                   //transitionControl.AddPage(_updatePage);
                                                    ShowPage(_updatePage);
                                                });
                     }
@@ -1090,7 +1090,7 @@ namespace Elpis
                         {
                             _updatePage = new UpdatePage(_update);
                             _updatePage.UpdateSelectionEvent += _updatePage_UpdateSelectionEvent;
-                            transitionControl.AddPage(_updatePage);
+                            //transitionControl.AddPage(_updatePage);
                             ShowPage(_updatePage);
                         });
                     }
